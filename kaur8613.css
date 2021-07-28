@@ -1,0 +1,135 @@
+body {
+color: #fff;
+font-family: "Raleway";
+font-size: 10pt;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+margin: 0px;
+overflow-x: hidden;
+text-align: center;
+}
+
+.button {
+border: 2px solid #fff;
+cursor: pointer;
+font-size: 15pt;
+transition: all 0.5s;
+padding: 12px 40px 12px 15px;
+}
+.button:hover {
+background-color: #04c2c9;
+border-color: #04c2c9;
+border-radius: 50px;
+}
+
+
+section {
+color: #616161;
+line-height: 11pt;
+position: relative;
+padding-top: 20px;
+}
+section .container {
+box-sizing: border-box;
+margin: 0 auto;
+max-width: 1200px;
+width: 100%;
+}
+section .flex-50-gt-sm {
+display: block;
+}
+
+@media screen and (min-width: 600px) {
+body {
+font-size: 12pt;
+}
+
+section {
+line-height: 18pt;
+}
+.h1Head {
+  font-family: 'Poppins', sans-serif, 'arial';
+  font-weight: 600;
+  font-size: 72px;
+  color: Black;
+  text-align: center;
+}
+
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+  .styled-input {
+      width:100%;
+  }
+}
+
+.styled-input label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide { 
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: rgb(232, 240, 254);
+  color: black;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+
+
+
+
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="scriptFiles/jquery.js"></script>
+	<script src="scriptFiles/kaur8613.js"></script>
+	<link href="stylesheets/kaur8613.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<script>
+   
+    function productsAdd() {
+      
+        if ($("#contactTable tbody").length == 0) {
+            $("#contactTable").append("<tbody></tbody>");
+        }
+        
+        // Append product to the table
+        $("#contactTable tbody").append("<tr>" +
+					"<td></td>"+
+					"<td>me.jpg</td>"+
+            "<td>Gurjot</td>" +
+            "<td>Kaur</td>" +
+            "<td>gurjothunjan26@gmail.com</td>" +
+						"<td>437-774-9735</td>" +
+            "</tr>");
+            
+        $("#contactTable tbody").append("<tr>" +
+					"<td></td>"+
+					"<td></td>"+
+					"<td>Gurjot</td>" +
+            "<td>Kaur</td>" +
+            "<td>gurjothunjan26@gmail.com</td>" +
+						"<td>437-774-9735</td>" +
+            "</tr>");
+}
+
+</script>
+
+</head>
+<body>
+
+		<section class="flex height-fix">
+			<div class="container">
+				<div class="row">
+						<div class="col-sm-6">
+							<h1 class="h1Head">Contact List</h1>
+						
+						</div>
+				</div>
+				<div class="row">
+						<div class="col-sm-6">
+								<table id="contactTable" class="table table-bordered table-condensed table-striped">
+										<thead>
+												<tr>
+													<th>Update</th>
+													<th>Image</th>
+														<th>First Name</th>
+														<th>Last Name</th>
+														<th>Email</th>
+														<th>Phone Number</th>
+												</tr>
+										</thead>
+								</table>
+						</div>
+				</div>
+		</div>
+		
+</section>
+<form>
+	<div class="col-xs-12">
+		<div class="styled-input wide">
+
+		</div>
+	</div>
+			<div class="row input-container">
+			
+				<div class="col-xs-12">
+					<div class="styled-input wide">
+						<input type="text" id="firstname"/><label >First Name</label> 
+						<input type="file"
+ id="image"name="filename">
+						
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="styled-input">
+						<input type="text "id= "lastname"/>
+						<label >Last Name</label> 
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="styled-input" style="float:right;">
+						
+						<input
+    type="text"
+    pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"id="email"
+    required>
+						<label>email</label> 
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="styled-input wide">
+						<input type="number" id="phoneno" required />
+						<label >Phone Number</label> 
+					</div>
+				</div>
+				</div>
+				<section>
+<div>	<button type="button" 
+id="updateButton"class="button">Create</button></div></section>
+</form>
+  </body>
+  </html>
+	
+	
